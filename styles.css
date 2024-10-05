@@ -19,6 +19,15 @@ h1, h2 {
     color: #075e54;
 }
 
+nav {
+    margin-bottom: 1.5rem; /* Added margin for spacing */
+}
+
+nav img.logo {
+    width: 150px; /* Adjust logo size as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -89,4 +98,27 @@ footer {
     padding: 1rem;
     background-color: #f0f0f0;
     border-radius: 8px;
+}
+
+/* Styles for the blog section */
+#blog {
+    margin-top: 2rem;
+}
+
+.blog-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.blog-list li {
+    margin: 10px 0;
+}
+
+.blog-list a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.blog-list a:hover {
+    text-decoration: underline;
 }
