@@ -28,25 +28,30 @@ h1, h2 {
     color: var(--secondary-color);
 }
 
+.logo-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.logo {
+    max-height: 60px;
+    width: auto;
+}
+
 .logo-nav-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     background-color: var(--primary-color);
     padding: 0.5rem 1rem;
     border-radius: 8px;
-    margin-bottom: 1rem;
     box-shadow: var(--box-shadow);
-}
-
-.logo {
-    max-height: 40px;
-    width: auto;
 }
 
 nav ul {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
     margin: 0;
     padding: 0;
@@ -67,6 +72,7 @@ nav ul li a {
 nav ul li a:hover {
     opacity: 0.8;
 }
+
 
 form {
     display: flex;
