@@ -106,3 +106,8 @@ button {
     background-color: var(--primary-color);
     color: var(--white);
     border: none;
+footer p {
+    text-align: center;
+    margin: 0;
+    padding: 1rem 0;
+}
