@@ -15,3 +15,16 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
+function shareApp() {
+    if (navigator.share) {
+        navigator.share({
+            title: 'Direct WhatsApp Message',
+            text: 'Check out this Direct WhatsApp messaging app!',
+            url: window.location.href
+        })
+        .then(() => console.log('Successful share'))
+        .catch((error) => console.error('Error sharing:', error));
+    } else {
+        alert('Sharing is not supported on this browser/device.');
+    }
+}
