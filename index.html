@@ -3,55 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="theme-color" content="#128c7e">
-    <title>Send WhatsApp Messages Without Saving Contacts | DirectWhatsApp</title>
-    <meta name="description" content="DirectWhatsApp is a simple service that lets you send WhatsApp messages to any phone number directly, without adding the number to your contacts. No login needed, no cookies used.">
-    <meta name="keywords" content="message, WhatsApp, direct, contacts, contact list, phonebook, webservice">
+    <title>Direct WhatsApp Message | Send Messages Without Saving Contacts</title>
+    <meta name="description" content="Send WhatsApp messages without saving contacts. Quick, easy, and secure way to connect on WhatsApp for business and personal use.">
+    <meta name="keywords" content="Direct WhatsApp, WhatsApp link generator, WhatsApp chat, WhatsApp without contact, WhatsApp business">
     <link rel="stylesheet" href="styles.css">
-    <link rel="canonical" href="https://directwamsg.com/" />
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-    <link rel="manifest" href="/manifest.webmanifest.json" />
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "WebApplication",
-      "name": "DirectWhatsApp",
-      "url": "https://directwamsg.com/",
-      "description": "Send WhatsApp messages without saving contacts",
+      "name": "Direct WhatsApp Message",
+      "description": "Send WhatsApp messages without saving contacts. Quick, easy, and secure way to connect on WhatsApp for business and personal use.",
+      "url": "https://directwamsg.com",
       "applicationCategory": "CommunicationApplication",
-      "operatingSystem": "All"
+      "operatingSystem": "All",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      }
     }
     </script>
 </head>
 <body>
-    <header>
-        <div class="logo-nav-container">
-            <a href="/" aria-label="Home">
-                <img src="Logo.png" alt="DirectWhatsApp Logo" width="150" height="50" class="logo">
-            </a>
-            <nav>
-                <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/about.html">About Us</a></li>
-                    <li><a href="/privacy-policy.html">Privacy Policy</a></li>
-                    <li><a href="/blog.html">Blog</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+    <div class="logo-nav-container">
+        <a href="/" aria-label="Home">
+            <img src="direct-whatsapp-logo.png" alt="Direct WhatsApp Message Logo" class="logo" width="120" height="40">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about.html">About Us</a></li>
+                <li><a href="/privacy.html">Privacy Policy</a></li>
+                <li><a href="/blog.html">Blog</a></li>
+            </ul>
+        </nav>
+    </div>
 
-    <main class="container" role="main">
-        <h1>Send WhatsApp Messages Without Saving Contacts</h1>
-        
-        <form id="whatsapp-form" onsubmit="return openWhatsAppChat()">
-            <label for="country-code">Country Code:</label>
-            <input type="text" id="country-code" placeholder="e.g. 1" required>
-            
-            <label for="phone-number">Phone Number:</label>
-            <input type="tel" id="phone-number" placeholder="Enter phone number" required>
-            
+    <div class="container" role="main">
+        <h1>Direct WhatsApp Message: Send Without Saving Contacts</h1>
+
+        <form id="whatsappForm">
+            <label for="countryCode">Country Code:</label>
+            <input type="text" id="countryCode" required>
+
+            <label for="phoneNumber">Phone Number:</label>
+            <input type="tel" id="phoneNumber" required>
+
             <button type="submit">Open WhatsApp Chat</button>
         </form>
 
@@ -64,6 +61,28 @@
                 <li>Perfect for business and personal use</li>
                 <li>Secure and private - no data stored</li>
                 <li>No login required</li>
+            </ul>
+        </section>
+
+        <section class="features">
+            <h2>Features of Our Direct WhatsApp Service</h2>
+            <ul>
+                <li>Instant WhatsApp chat links</li>
+                <li>No contact saving required</li>
+                <li>Compatible with WhatsApp Business</li>
+                <li>Works on mobile and desktop</li>
+                <li>Privacy-focused - no data storage</li>
+            </ul>
+        </section>
+
+        <section class="use-cases">
+            <h2>Perfect for Various Use Cases</h2>
+            <ul>
+                <li>Customer support</li>
+                <li>Sales inquiries</li>
+                <li>Networking</li>
+                <li>One-time communications</li>
+                <li>International contacts</li>
             </ul>
         </section>
 
@@ -86,56 +105,18 @@
                 <p>Yes, many businesses use our service to quickly connect with customers or clients via WhatsApp without needing to save their numbers as contacts.</p>
             </details>
         </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2024 DirectWhatsApp. All rights reserved.</p>
-        <button onclick="sharethis()" class="share-button">Share This App</button>
-    </footer>
-
-    <div id="pinstall" class="install-prompt">
-        <p>Install this app on your iPhone: tap <img src="share-icon.png" alt="Share icon" /> and then "Add to Home Screen"</p>
     </div>
 
-    <script>
-        function openWhatsAppChat() {
-            const countryCode = document.getElementById('country-code').value.replace(/\D/g, '');
-            const phoneNumber = document.getElementById('phone-number').value.replace(/\D/g, '');
-            const whatsappUrl = `https://api.whatsapp.com/send?phone=${countryCode}${phoneNumber}`;
-            window.location.href = whatsappUrl;
-            return false;
-        }
+    <footer>
+        <p>© 2024 DirectWhatsApp. All rights reserved.</p>
+    </footer>
 
-        function sharethis() {
-            if (navigator.share) {
-                navigator.share({
-                    title: 'DirectWhatsApp',
-                    text: 'Send WhatsApp messages without saving contacts',
-                    url: 'https://directwamsg.com/',
-                })
-                .then(() => console.log('Successful share'))
-                .catch((error) => console.log('Error sharing', error));
-            }
-        }
+    <button class="share-button">Share This App</button>
 
-        if ('serviceWorker' in navigator) {
-            window.addEventListener("load", () => {
-                navigator.serviceWorker.register('/service-worker.js')
-                .then(reg => console.log("Service worker registered"))
-                .catch(err => console.error(`Service Worker Error: ${err}`));
-            });
-        }
+    <div id="pinstall" class="install-prompt">
+        Install this app on your iPhone: tap <img src="share-icon.png" alt="Share icon"> and then "Add to Home Screen"
+    </div>
 
-        const isIos = () => {
-            const userAgent = window.navigator.userAgent.toLowerCase();
-            return /iphone|ipad|ipod/.test(userAgent);
-        }
-
-        const isInStandaloneMode = () => ('standalone' in window.navigator) && (window.navigator.standalone);
-
-        if (isIos() && !isInStandaloneMode()) {
-            document.getElementById("pinstall").style.display = "block";
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
