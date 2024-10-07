@@ -25,30 +25,36 @@
     </script>
 </head>
 <body>
-    <div class="logo-nav-container">
-        <a href="/" aria-label="Home">
-            <img src="direct-whatsapp-logo.png" alt="Direct WhatsApp Message Logo" class="logo" width="120" height="40">
-        </a>
-        <nav>
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/about.html">About Us</a></li>
-                <li><a href="/privacy.html">Privacy Policy</a></li>
-                <li><a href="/blog.html">Blog</a></li>
-            </ul>
-        </nav>
-    </div>
+    <header>
+        <div class="logo-nav-container">
+            <a href="/" aria-label="Home">
+                <img src="logo.png" alt="Direct WhatsApp Message Logo" class="logo">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about.html">About Us</a></li>
+                    <li><a href="/privacy.html">Privacy Policy</a></li>
+                    <li><a href="/blog.html">Blog</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-    <div class="container" role="main">
+    <main class="container" role="main">
         <h1>Direct WhatsApp Message: Send Without Saving Contacts</h1>
 
         <form id="whatsappForm">
-            <label for="countryCode">Country Code:</label>
-            <input type="text" id="countryCode" required>
-
-            <label for="phoneNumber">Phone Number:</label>
-            <input type="tel" id="phoneNumber" required>
-
+            <div class="input-group">
+                <div>
+                    <label for="countryCode">Country Code:</label>
+                    <input type="text" id="countryCode" value="+91" required>
+                </div>
+                <div>
+                    <label for="phoneNumber">Phone Number:</label>
+                    <input type="tel" id="phoneNumber" required>
+                </div>
+            </div>
             <button type="submit">Open WhatsApp Chat</button>
         </form>
 
@@ -105,17 +111,15 @@
                 <p>Yes, many businesses use our service to quickly connect with customers or clients via WhatsApp without needing to save their numbers as contacts.</p>
             </details>
         </section>
-    </div>
+    </main>
 
     <footer>
         <p>© 2024 DirectWhatsApp. All rights reserved.</p>
+        <button class="share-button">Share This App</button>
+        <div id="pinstall" class="install-prompt">
+            Install this app on your iPhone: tap <img src="share-icon.png" alt="Share icon"> and then "Add to Home Screen"
+        </div>
     </footer>
-
-    <button class="share-button">Share This App</button>
-
-    <div id="pinstall" class="install-prompt">
-        Install this app on your iPhone: tap <img src="share-icon.png" alt="Share icon"> and then "Add to Home Screen"
-    </div>
 
     <script src="script.js"></script>
 </body>
